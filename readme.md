@@ -1,6 +1,6 @@
 # Vortexi Source Code
 
-This is the original Vortexi source code (not vortexi.us)
+This is the original Vortexi source code (not vortexi.de)
 
 This was made with love by me.
 
