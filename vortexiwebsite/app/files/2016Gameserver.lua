@@ -20,7 +20,6 @@ pcall(function() game:SetCreatorID(CreatorId, CreatorType) end)
 
 pcall(function() settings().Network.UseInstancePacketCache = true end)
 pcall(function() settings().Network.UsePhysicsPacketCache = true end)
---pcall(function() settings()["Task Scheduler"].PriorityMethod = Enum.PriorityMethod.FIFO end)
 pcall(function() settings()["Task Scheduler"].PriorityMethod = Enum.PriorityMethod.AccumulatedError end)
 
 --settings().Network.PhysicsSend = 1 -- 1==RoundRobin
@@ -68,7 +67,7 @@ if BaseURL~=nil then
 end
 
 pcall(function() 
-    game:GetService("NetworkServer"):SetIsPlayerAuthenticationRequired(false) 
+    game:GetService("NetworkServer"):SetIsPlayerAuthenticationRequired(true) -- even though its legacy its better on than off
 end)
 settings().Diagnostics.LuaRamLimit = 0
 
